@@ -19,7 +19,7 @@ jobs:
 
     - name: Set up secret file
       env:
-        DEBUG_PASSWORD: ${{ secrets.TEST }}
+        DEBUG_PASSWORD: ${{ secrets.TEST_SECRET }}
       run: |
         echo $DEBUG_PASSWORD >> secrets.txt
         
